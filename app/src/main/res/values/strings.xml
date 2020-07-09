@@ -4,4 +4,9 @@
     <string name="Tag_line">Buy Anything Anytime</string>
     <string name="sign_up">Sign Up</string>
     <string name="logo">logo</string>
+    <string name="user_name">UserName</string>
+    <string name="Fill_userName">"Enter  your username "</string>
+    <string name="Password">Password</string>
+    <string name="pass_word">Please enter your password</string>
+    <string name="logged_in">Keep me logged in</string>
 </resources>
