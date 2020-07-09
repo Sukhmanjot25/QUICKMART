@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/icon"
+        android:icon="@drawable/ic_call"
+        android:title="My icon"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/settings"
+        android:title="Settings"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/Contact_Us"
+        android:title="Contact Us"
+        app:showAsAction="never"/>
+
+
+
+
+
+
+</menu>
