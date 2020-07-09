@@ -1,7 +1,11 @@
 package com.example.quickmart;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,13 +16,31 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.android.material.navigation.NavigationView;
 
+public class MainActivity extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener {
+    private DrawerLayout mNavDrawer;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.nav_drawer_layout);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+mNavDrawer=findViewById(R.id.drawer_layout);
+NavigationView navigationView=findViewById(R.id.navigation_view);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, mNavDrawer, toolbar,
+                R.string.navigation_drawer_open,
+                R.string.navigation_drawer_close
+        );
+mNavDrawer.addDrawerListener(toggle);
+toggle.syncState();
+navigationView.setNavigationItemSelectedListener(this);
 
     }
 
@@ -32,6 +54,17 @@ inflater.inflate(R.menu.menu, menu);
 
         return true;
     }
+
+    @Override
+    public void onBackPressed() {
+        if(mNavDrawer.isDrawerOpen(GravityCompat.START)){
+            mNavDrawer.closeDrawer(GravityCompat.START);
+        }else{
+            super.onBackPressed();
+        }
+
+    }
+
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
@@ -52,5 +85,31 @@ inflater.inflate(R.menu.menu, menu);
 
 
 
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        switch (menuItem.getItemId()){
+            case R.id.nav_help:
+                Toast.makeText(this, "This is the help option", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.nav_inbox:
+                Toast.makeText(this, "This is the inbox option", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.nav_message:
+                Toast.makeText(this, "This is the message option", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_send:
+                Toast.makeText(this, "This is the send option", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_share:
+                Toast.makeText(this, "This is the share option", Toast.LENGTH_SHORT).show();
+                break;
+
+        }
+        mNavDrawer.closeDrawer(GravityCompat.START);
+        return true;
     }
 }
