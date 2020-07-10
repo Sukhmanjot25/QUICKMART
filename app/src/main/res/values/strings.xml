@@ -10,9 +10,15 @@
     <string name="pass_word">Please enter your password</string>
     <string name="logged_in">Keep me logged in</string>
 
+
     <string name="name">Name</string>
     <string name="email_address">Email Address</string>
     <string name="phone_number">Phone Number</string>
     <string name="new_password">New Password</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
 
 </resources>
