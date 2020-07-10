@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -79,6 +80,8 @@ inflater.inflate(R.menu.menu, menu);
 
             case R.id.Contact_Us:
                 Toast.makeText(this, "Contact Us Selected", Toast.LENGTH_SHORT).show();
+                Intent intent2=new Intent(MainActivity.this,ContactUs.class);
+                startActivity(intent2);
                 return true;
             default: return super.onOptionsItemSelected(item);
         }
