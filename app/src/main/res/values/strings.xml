@@ -9,9 +9,8 @@
     <string name="Password">Password</string>
     <string name="pass_word">Please enter your password</string>
     <string name="logged_in">Keep me logged in</string>
-<string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
 
 
 </resources>

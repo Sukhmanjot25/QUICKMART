@@ -1,6 +1,7 @@
 package com.example.quickmart;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 
 public class itemspage extends AppCompatActivity {
