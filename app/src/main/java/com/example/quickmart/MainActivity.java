@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout mNavDrawer;
     private Button button;
+    private  Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,18 +33,31 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-mNavDrawer=findViewById(R.id.drawer_layout);
-NavigationView navigationView=findViewById(R.id.navigation_view);
+            mNavDrawer=findViewById(R.id.drawer_layout);
+            NavigationView navigationView=findViewById(R.id.navigation_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, mNavDrawer, toolbar,
                 R.string.navigation_drawer_open,
                 R.string.navigation_drawer_close
         );
-mNavDrawer.addDrawerListener(toggle);
-toggle.syncState();
-navigationView.setNavigationItemSelectedListener(this);
+                    mNavDrawer.addDrawerListener(toggle);
+                            toggle.syncState();
+                            navigationView.setNavigationItemSelectedListener(this);
+        button =(Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openItemsPage();
+            }
+        });
 
     }
+    public void  openItemsPage(){
+         Intent intent = new Intent(this,itemspage.class );
+         startActivity(intent);
+    }
+
+
 
 
     @Override

@@ -148,7 +148,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#E91E63"
         android:textStyle="italic"
-app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.443"
         app:layout_constraintStart_toStartOf="parent"
