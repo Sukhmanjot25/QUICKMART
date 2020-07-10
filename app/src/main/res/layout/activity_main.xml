@@ -18,7 +18,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
         app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"/>
 
 
@@ -45,6 +44,7 @@
         android:fontFamily="serif"
         android:text="@string/sign_up"
         android:textColor="#E91E63"
+        android:onClick="btn_signup"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.749"
@@ -103,9 +103,13 @@
         android:ems="10"
         android:fontFamily="serif"
         android:inputType="textPersonName"
+
         android:hint="@string/Fill_userName"
+
+
         android:textColor="#E91E63"
         android:textStyle="italic"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.458"
@@ -136,11 +140,14 @@
         android:ems="10"
         android:fontFamily="serif"
         android:inputType="textPassword"
+
+
+
         android:hint="@string/pass_word"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#E91E63"
         android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.443"
         app:layout_constraintStart_toStartOf="parent"
