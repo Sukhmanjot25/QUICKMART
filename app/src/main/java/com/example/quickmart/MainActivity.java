@@ -3,6 +3,7 @@ package com.example.quickmart;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -23,11 +24,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater=getMenuInflater();
-inflater.inflate(R.menu.menu, menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
 
 
         return true;
@@ -35,7 +35,7 @@ inflater.inflate(R.menu.menu, menu);
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch(item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.icon:
                 Toast.makeText(this, "Icon Selected", Toast.LENGTH_SHORT).show();
                 return true;
@@ -47,10 +47,14 @@ inflater.inflate(R.menu.menu, menu);
             case R.id.Contact_Us:
                 Toast.makeText(this, "Contact Us Selected", Toast.LENGTH_SHORT).show();
                 return true;
-            default: return super.onOptionsItemSelected(item);
+            default:
+                return super.onOptionsItemSelected(item);
         }
 
 
+    }
 
+    public void btn_signup(View view) {
+        startActivity(new Intent(getApplicationContext(), Signup.class));
     }
 }
