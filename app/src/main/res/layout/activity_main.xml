@@ -107,7 +107,7 @@
 
         android:hint="@string/Fill_userName"
 
-        android:text="@string/Fill_userName"
+
         android:textColor="#E91E63"
         android:textStyle="italic"
 
@@ -143,7 +143,6 @@
         android:inputType="textPassword"
 
         android:hint="@string/pass_word"
-        android:text="@string/pass_word"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#E91E63"
         android:textStyle="italic"
