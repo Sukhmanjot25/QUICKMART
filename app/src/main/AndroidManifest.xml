@@ -9,10 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".ContactUs"></activity>
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
+=======
+
+        <activity android:name=".Signup"></activity>
+
+      <activity android:name=".itemspage"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+>>>>>>> 95cf2c021de44c04ab97c7b9514939a386063c66
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

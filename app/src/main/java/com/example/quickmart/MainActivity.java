@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout mNavDrawer;
     private Button button;
+    private  Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,23 +33,35 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-mNavDrawer=findViewById(R.id.drawer_layout);
-NavigationView navigationView=findViewById(R.id.navigation_view);
+            mNavDrawer=findViewById(R.id.drawer_layout);
+            NavigationView navigationView=findViewById(R.id.navigation_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, mNavDrawer, toolbar,
                 R.string.navigation_drawer_open,
                 R.string.navigation_drawer_close
         );
-mNavDrawer.addDrawerListener(toggle);
-toggle.syncState();
-navigationView.setNavigationItemSelectedListener(this);
+                    mNavDrawer.addDrawerListener(toggle);
+                            toggle.syncState();
+                            navigationView.setNavigationItemSelectedListener(this);
+        button =(Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openItemsPage();
+            }
+        });
 
     }
+    public void  openItemsPage(){
+         Intent intent = new Intent(this,itemspage.class );
+         startActivity(intent);
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater=getMenuInflater();
-inflater.inflate(R.menu.menu, menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
 
 
         return true;
@@ -67,7 +80,7 @@ inflater.inflate(R.menu.menu, menu);
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch(item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.icon:
                 Toast.makeText(this, "Icon Selected", Toast.LENGTH_SHORT).show();
                 return true;
@@ -81,11 +94,15 @@ inflater.inflate(R.menu.menu, menu);
                 Intent intent2=new Intent(MainActivity.this,ContactUs.class);
                 startActivity(intent2);
                 return true;
-            default: return super.onOptionsItemSelected(item);
+            default:
+                return super.onOptionsItemSelected(item);
         }
 
 
+    }
 
+    public void btn_signup(View view) {
+        startActivity(new Intent(getApplicationContext(), Signup.class));
     }
 
     @Override
