@@ -21,7 +21,6 @@
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
 
-        <activity android:name=".Recyclerview"></activity>
         <activity android:name=".Signup" />
         <activity
             android:name=".MainActivity"
