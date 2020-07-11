@@ -49,8 +49,6 @@ public class MainActivity extends AppCompatActivity
 
 
 
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -84,6 +82,8 @@ public class MainActivity extends AppCompatActivity
 
             case R.id.Contact_Us:
                 Toast.makeText(this, "Contact Us Selected", Toast.LENGTH_SHORT).show();
+                Intent intent2=new Intent(MainActivity.this,ContactUs.class);
+                startActivity(intent2);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
