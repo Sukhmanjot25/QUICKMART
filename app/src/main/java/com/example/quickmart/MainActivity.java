@@ -43,19 +43,10 @@ public class MainActivity extends AppCompatActivity
                     mNavDrawer.addDrawerListener(toggle);
                             toggle.syncState();
                             navigationView.setNavigationItemSelectedListener(this);
-        button =(Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openItemsPage();
-            }
-        });
+
 
     }
-    public void  openItemsPage(){
-         Intent intent = new Intent(this,itemspage.class );
-         startActivity(intent);
-    }
+
 
 
 
