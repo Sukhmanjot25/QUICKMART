@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class itemspage extends AppCompatActivity {
+public class Recyclerview extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_itemspage);
+        setContentView(R.layout.activity_recyclerview);
     }
 }
