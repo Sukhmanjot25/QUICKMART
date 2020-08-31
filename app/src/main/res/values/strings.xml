@@ -15,6 +15,9 @@
     <string name="new_password">New Password</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="jacket">Jacket</string>
+    <string name="dress2">Dress2</string>
+    <string name="dress3">dress3</string>
 
 
     <string-array name="itemsSelling">

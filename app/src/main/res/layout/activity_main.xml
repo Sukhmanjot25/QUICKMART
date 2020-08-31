@@ -30,6 +30,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="serif"
         android:text="@string/sign_in"
+        android:onClick="btn_signin"
         android:textColor="#E91E63"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
