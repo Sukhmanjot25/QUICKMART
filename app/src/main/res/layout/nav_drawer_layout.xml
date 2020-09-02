@@ -9,10 +9,12 @@
     android:fitsSystemWindows="true"
 
     >
-
-    <include layout="@layout/activity_main"
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="#fff"
+        android:id="@+id/toolbar"></androidx.appcompat.widget.Toolbar>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"

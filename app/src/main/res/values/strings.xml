@@ -18,6 +18,8 @@
     <string name="jacket">Jacket</string>
     <string name="dress2">Dress2</string>
     <string name="dress3">dress3</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
 
 
     <string-array name="itemsSelling">
