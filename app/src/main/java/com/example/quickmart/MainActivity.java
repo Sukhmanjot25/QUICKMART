@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                     mPassword.setError("Password must be greter or equals to 6 characters");
                     return;
                 }
-                
+
 
                 progressBar.setVisibility(View.VISIBLE);
 
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(MainActivity.this, "Logged In Successfully", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), recyclerview.class));
+                            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                         } else {
                             Toast.makeText(MainActivity.this, "Error!" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);
