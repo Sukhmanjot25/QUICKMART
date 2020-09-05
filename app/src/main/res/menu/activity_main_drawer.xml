@@ -8,13 +8,26 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home" />
+
+
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_order"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Your Orders" />
+
+        <item
+            android:id="@+id/nav_Feedback"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Feedback" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_Account"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Logout" />
+            android:title="Your Account " />
+
+        <item
+            android:id="@+id/nav_Logout"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Logout " />
+
     </group>
 </menu>
