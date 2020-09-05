@@ -38,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
     ProgressBar progressBar;
     FirebaseAuth fAuth;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -95,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), Signup.class));
             }
         });
+
 
         forgotpassword.setOnClickListener(new View.OnClickListener() {
             @Override
