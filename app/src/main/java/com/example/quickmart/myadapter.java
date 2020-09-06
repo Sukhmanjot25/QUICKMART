@@ -42,10 +42,10 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
 
         public myviewholder(@NonNull View itemView) {
             super(itemView);
-            img =(ImageView)itemView.findViewById(R.id.img1);
-            name=(TextView)itemView.findViewById(R.id.name);
-            desc=(TextView)itemView.findViewById(R.id.description);
-            price=(TextView)itemView.findViewById(R.id.price);
+            img =(ImageView)itemView.findViewById(R.id.product_image);
+            name=(TextView)itemView.findViewById(R.id.product_name);
+            desc=(TextView)itemView.findViewById(R.id.product_desc);
+            price=(TextView)itemView.findViewById(R.id.product_price);
 
 
 
