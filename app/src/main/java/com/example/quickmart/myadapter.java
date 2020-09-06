@@ -13,8 +13,6 @@ import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
-import org.w3c.dom.Text;
-
 public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewholder> {
     public myadapter(@NonNull FirebaseRecyclerOptions<model> options) {
         super(options);
@@ -33,6 +31,9 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
     public myviewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.singlerow,parent,false);
         return new myviewholder(view);
+    }
+
+    public void stopListening() {
     }
 
     class myviewholder extends RecyclerView.ViewHolder{
