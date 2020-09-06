@@ -6,28 +6,51 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:title="@string/menu_home"
+            android:iconTint="@android:color/white"/>
+        <item
+            android:id="@+id/nav_men"
+            android:title="@string/men"
+            android:iconTint="@android:color/white"/>
+        <item
+            android:id="@+id/nav_women"
+            android:title="@string/women"
+            android:iconTint="@android:color/white"/>
+        android:icon="@drawable/ic_menu_camera"
+        android:title="@string/menu_home" />
 
 
         <item
-            android:id="@+id/nav_order"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Your Orders" />
+            android:id="@+id/nav_kids"
+            android:title="@string/kids"
+            android:iconTint="@android:color/white"/>
+        android:id="@+id/nav_order"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="Your Orders" />
 
         <item
-            android:id="@+id/nav_Feedback"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Feedback" />
+            android:id="@+id/nav_orders"
+            android:title="@string/your_orders"
+            android:iconTint="@android:color/white"/>
+        android:id="@+id/nav_Feedback"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="Feedback" />
         <item
-            android:id="@+id/nav_Account"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Your Account " />
+            android:id="@+id/nav_settings"
+            android:title="@string/settings"
+            android:iconTint="@android:color/white"/>
+        android:id="@+id/nav_Account"
+        android:icon="@drawable/ic_menu_slideshow"
+        android:title="Your Account " />
 
         <item
-            android:id="@+id/nav_Logout"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Logout " />
+            android:id="@+id/nav_logout"
+            android:title="@string/logout"
+            android:iconTint="@android:color/white"/>
+        android:id="@+id/nav_Logout"
+        android:icon="@drawable/ic_menu_slideshow"
+        android:title="Logout " />
 
     </group>
 </menu>
+
