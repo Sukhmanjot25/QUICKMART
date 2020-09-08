@@ -11,12 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".Feedback"></activity>
         <activity android:name=".ui.MenClothing" />
-        <activity
-            android:name=".HomeActivity"
-            android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
         <activity android:name=".ContactUs" />
         <activity android:name=".Signup" />
         <activity
