@@ -2,13 +2,9 @@ package com.example.quickmart;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -43,11 +39,10 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         recview=(RecyclerView)findViewById(R.id.recview);
-        //recview.setLayoutManager(new LinearLayoutManager(this));
-
-        // LinearLayoutManager layoutManager=new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
-        //recview.setLayoutManager(layoutManager);
-
+/**
+ *
+ * Grid Layout formation with 2 coulmns
+ */
         GridLayoutManager gridLayoutManager=new GridLayoutManager(this,2);
         recview.setLayoutManager(gridLayoutManager);
 
@@ -81,6 +76,11 @@ public void openCheckout(){
     startActivity(intent);
 }
 
+    /**
+     *
+     * @author ripenpreet
+     * method to call logout button to signout and go to login activity
+     */
 
     public void logout(View view) {
         FirebaseAuth.getInstance().signOut();

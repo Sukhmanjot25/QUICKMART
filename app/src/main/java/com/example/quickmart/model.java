@@ -1,18 +1,28 @@
 package com.example.quickmart;
 
 public class model {
+
     String product_name,product_description,product_price,product_image;
     model(){
 
 
     }
 
+    /**
+     * @author ripenpreet
+     * @param product_name
+     * @param product_description
+     * @param product_price
+     * @param product_image
+     * creating constructor
+     */
     public model(String product_name, String product_description, String product_price, String product_image) {
         this.product_name = product_name;
         this.product_description = product_description;
         this.product_price = product_price;
         this.product_image = product_image;
     }
+    //creating getter and setter
 
     public String getProduct_name() {
         return product_name;

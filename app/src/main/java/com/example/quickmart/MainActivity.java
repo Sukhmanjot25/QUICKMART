@@ -49,6 +49,11 @@ public class MainActivity extends AppCompatActivity {
         mCreateBtn = findViewById(R.id.createtext);
         forgotpassword = findViewById(R.id.forgotpass);
 
+        /**
+         * @author ripenpreet
+         * conditions for logging in  and connection to firebase to login
+         */
+
         mLoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -88,13 +93,14 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         });
+        //Move user to Signup Activity
         mCreateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), Signup.class));
             }
         });
-
+    //reset password for user with valid email address
 
         forgotpassword.setOnClickListener(new View.OnClickListener() {
             @Override

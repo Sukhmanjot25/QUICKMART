@@ -39,12 +39,14 @@ public class Signup extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         progressBar = findViewById(R.id.progressBar);
 
+        //validating if user is already logged in and moves user directly to HomeActivity
+
 if(fAuth.getCurrentUser()!=null){
     startActivity(new Intent(getApplicationContext(),HomeActivity.class));
     finish();
 }
 
-
+// Conditions to Register as a User
         mRegisterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
