@@ -13,7 +13,7 @@
         android:layout_height="494dp"
         android:padding="15dp">
 
-        <de.hdodenhof.circleimageview.CircleImageView
+        <ImageView
             android:id="@+id/product_image"
             android:layout_width="389dp"
             android:layout_height="126dp"
@@ -23,8 +23,6 @@
             android:layout_marginStart="0dp"
             android:layout_marginEnd="0dp"
             android:src="@mipmap/ic_launcher"
-            app:civ_border_color="#FF000000"
-            app:civ_border_width="2dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentLeft="true"
             tools:ignore="MissingClass" />
@@ -79,7 +77,10 @@
             android:layout_marginTop="395dp"
             android:layout_marginEnd="61dp"
             android:layout_marginBottom="17dp"
-            android:text="Button"
+            android:text="ADD TO CART"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:background="#fff"
             android:layout_marginRight="61dp"
             android:layout_marginLeft="53dp"
             android:layout_alignParentRight="true"
