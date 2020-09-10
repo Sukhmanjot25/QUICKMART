@@ -1,6 +1,9 @@
 package com.example.quickmart;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -10,12 +13,29 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class HomeActivity extends AppCompatActivity {
+
+    /*
+
+
+   @author sukhmanjot
+   variable for button
+
+     */
+    private Button button;
+
     RecyclerView recview;
     myadapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        button= (Button) findViewById(R.id.Checkout);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCheckout();
+            }
+        });
 
         recview=(RecyclerView)findViewById(R.id.recview);
         //recview.setLayoutManager(new LinearLayoutManager(this));
@@ -47,5 +67,12 @@ public class HomeActivity extends AppCompatActivity {
         super.onStop();
         adapter.stopListening();
     }
-
+    /**
+     * @author sukhmanjot
+     * method to call the button to go to checkout page
+     */
+public void openCheckout(){
+    Intent intent=new Intent(this,CheckoutActivity.class);
+    startActivity(intent);
+}
 }
