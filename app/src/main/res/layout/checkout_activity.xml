@@ -6,7 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@drawable/back"
+
     >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
 
     <EditText
         android:layout_width="match_parent"
