@@ -8,25 +8,24 @@
     android:layout_height="match_parent"
     tools:context=".Feedback">
 
-<EditText
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/username"
-    android:hint="username"
-    android:layout_marginTop="20sp"/>
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:hint="username" />
 
     <EditText
+        android:id="@+id/Feedback"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:id="@+id/Feedback"
-        android:hint="Feedback"/>
+        android:hint="Feedback" />
 
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Send Feedback"
-    android:onClick="FeedbackSent"/>
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:onClick="FeedbackSent"
+        android:text="Send Feedback" />
 
 
 </LinearLayout>
