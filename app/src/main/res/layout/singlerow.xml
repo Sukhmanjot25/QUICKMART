@@ -79,7 +79,7 @@
             android:layout_marginEnd="61dp"
             android:layout_marginBottom="17dp"
             android:text="ADD TO CART"
-            android:background="@color/colorAccent"
+            android:background="#7fffd4"
             android:textColor="#000"
             android:textStyle="bold"
             android:layout_marginRight="61dp"
