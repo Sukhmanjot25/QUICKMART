@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    android:orientation="vertical"
     tools:context=".Feedback">
 
     <EditText
@@ -13,19 +13,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
-        android:hint="username" />
+        android:fontFamily="serif"
+        android:hint="Type your user name Here" />
 
     <EditText
         android:id="@+id/Feedback"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:hint="Feedback" />
+        android:fontFamily="serif"
+        android:hint="Your Feedback Helps Us In Improving our Application " />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="65dp"
+        android:fontFamily="serif"
         android:onClick="FeedbackSent"
-        android:text="Send Feedback" />
+        android:text="Click Here To Send Feedback " />
 
 
 </LinearLayout>
