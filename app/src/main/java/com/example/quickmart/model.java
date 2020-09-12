@@ -3,6 +3,11 @@ package com.example.quickmart;
 public class model {
 
     String product_name,product_description,product_price,product_image;
+
+    /**
+     * blank constructor
+     * used to pass data from firebase to recycler view
+     */
     model(){
 
 
