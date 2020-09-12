@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateShoppingList">
+
+    <TableLayout
+        android:id="@+id/addIteminTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1">
+         <TextView  android:id="@+id/catTextView"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:background="@drawable/itembackground"
+             android:gravity="center"
+             android:text="Category"
+             android:textColor="@color/Black"
+             android:textSize="20sp"
+             />
+
+            <TextView  android:id="@+id/productTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/itembackground"
+                android:gravity="center"
+                android:text="Product"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                />
+            <TextView  android:id="@+id/quantityTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/itembackground"
+                android:gravity="center"
+                android:text="Quantity"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                />
+            <TextView  android:id="@+id/unitTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/itembackground"
+                android:gravity="center"
+                android:text="Unit"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                />
+
+
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/CheckoutActivity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="#900C3F "
+                android:text="CheckoutActivity"
+                android:textSize="24sp"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/addMoreItems"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="#F54E2A"
+                android:text="Add More Items"
+                android:textSize="24sp"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+</ScrollView>

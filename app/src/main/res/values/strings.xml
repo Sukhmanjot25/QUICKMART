@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">QUICKMART</string>
+    <color name="Black">#000000</color>
+    <color name="ExpandChildBackground">#2e856e</color>
+    <color name="ExpandGroupBackground">#228c22</color>
     <string name="sign_in">Sign In</string>
     <string name="Tag_line">Buy Anything Anytime</string>
     <string name="sign_up">Sign Up</string>

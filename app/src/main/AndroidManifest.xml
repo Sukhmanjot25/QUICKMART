@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".Feedback"></activity>
+        <activity android:name=".CreateShoppingList"></activity>
+        <activity android:name=".Shoppinglist" />
+        <activity android:name=".Feedback" />
         <activity android:name=".CheckoutActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".ContactUs" />
