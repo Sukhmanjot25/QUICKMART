@@ -24,11 +24,13 @@
         android:hint="Your Feedback Helps Us In Improving our Application " />
 
     <Button
+        android:id="@+id/sendfeedback"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:fontFamily="serif"
         android:onClick="FeedbackSent"
-        android:text="Click Here To Send Feedback " />
+        android:text="Click Here To Send Feedback "
+                    />
 
 
 </LinearLayout>

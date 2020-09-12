@@ -62,7 +62,7 @@ if(fAuth.getCurrentUser()!=null){
                     return;
                 }
                 if (password.length() < 6) {
-                    mPassword.setError("Password must be greter or equals to 6 characters");
+                    mPassword.setError("Password must be greater or equals to 6 characters");
                     return;
                 }
                 progressBar.setVisibility(View.VISIBLE);

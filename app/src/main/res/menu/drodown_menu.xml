@@ -10,10 +10,13 @@
         android:title="Feedback"
         app:showAsAction="never"/>
 
+    <item android:id="@+id/item3"
+        android:title="About"
+        app:showAsAction="never"/>
 
-
-
-
+    <item android:id="@+id/item4"
+        android:title="Tell a friend"
+        app:showAsAction="never"/>
 
 
 </menu>
