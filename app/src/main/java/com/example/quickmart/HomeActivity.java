@@ -30,11 +30,11 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        button= (Button) findViewById(R.id.Checkout);
+        button= (Button) findViewById(R.id.CreateShoppingList);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openCheckout();
+                openCreateShoppingList();
             }
         });
 
@@ -71,8 +71,8 @@ public class HomeActivity extends AppCompatActivity {
      * @author sukhmanjot
      * method to call the button to go to checkout page
      */
-public void openCheckout(){
-    Intent intent=new Intent(this,CheckoutActivity.class);
+public void openCreateShoppingList(){
+    Intent intent=new Intent(this,CreateShoppingList.class);
     startActivity(intent);
 }
 
