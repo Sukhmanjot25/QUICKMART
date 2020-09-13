@@ -7,7 +7,9 @@
     tools:context=".MainActivity"
     android:background="@drawable/back"
     >
-
+<include
+        android:id="@+id/toolbar_with_controls"
+        layout="@layout/toolbar_purchase_header" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
