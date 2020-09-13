@@ -9,10 +9,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#F4976D"
-        android:dividerHeight="7dp"
+        android:dividerHeight="6.5dp"
         android:groupIndicator="@drawable/ic_baseline_keyboard_arrow_down_24"
 
 
         />
 
 </LinearLayout>
+
