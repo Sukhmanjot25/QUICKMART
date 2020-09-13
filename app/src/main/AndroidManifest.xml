@@ -14,7 +14,11 @@
         <activity android:name=".Feedback"></activity>
         <activity android:name=".CheckoutActivity" />
         <activity android:name=".HomeActivity" />
+        <activity android:name=".CreateShoppingList"/>
+            <activity android:name=".Shoppinglist"/>
         <activity android:name=".ContactUs" />
+        <activity android:name=".Share"/>
+        <activity android:name=".About"/>
         <activity android:name=".Signup" />
         <activity
             android:name=".MainActivity"

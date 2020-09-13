@@ -55,19 +55,17 @@ public class CheckoutActivity extends AppCompatActivity {
              return true;
          }
 
-        else if( id==R.id.item3)
-        {
-            Intent intent=new Intent(this,About.class);
-            startActivity(intent);
-            return true;
-        }
-
-         else if( id==R.id.item4)
-         {
-             Intent intent=new Intent(this,Share.class);
-             startActivity(intent);
-             return true;
+     else if(id==R.id.item3){
+         Intent intent =new Intent (this,About.class);
+         startActivity(intent);
+         return true;
          }
+     else if(id==R.id.item4){
+         Intent intent =new Intent (this,Share.class);
+         startActivity(intent);
+         return true;
+         }
+
         return super.onOptionsItemSelected(item);
     }
 }
