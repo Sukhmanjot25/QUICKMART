@@ -20,6 +20,8 @@ public class HomeActivity extends AppCompatActivity {
 
    @author sukhmanjot
    variable for button
+   @author ripenpreet
+   creating recycler view(recview) and adapter
 
      */
     private Button button;
@@ -46,22 +48,31 @@ public class HomeActivity extends AppCompatActivity {
         GridLayoutManager gridLayoutManager=new GridLayoutManager(this,2);
         recview.setLayoutManager(gridLayoutManager);
 
+        /**
+         * Used to  fetch data from firebase  ..
+         * model is type of data
+         * model class is used to fetch
+         * Men is a child of firebase
+         * data fetched
+         */
         FirebaseRecyclerOptions<model> options =
                 new FirebaseRecyclerOptions.Builder<model>()
                         .setQuery(FirebaseDatabase.getInstance().getReference().child("Men"), model.class)
                         .build();
+        //use myadapter constructor
 
         adapter=new myadapter(options);
         recview.setAdapter(adapter);
 
     }
+    //when myadapter starts , it starts listening the data from database
 
     @Override
     protected void onStart() {
         super.onStart();
         adapter.startListening();
     }
-
+//when myadapter stops,then it stops listening data from database
     @Override
     protected void onStop() {
         super.onStop();
