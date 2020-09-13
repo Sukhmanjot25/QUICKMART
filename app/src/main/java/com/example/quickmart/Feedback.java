@@ -10,7 +10,12 @@ import com.firebase.client.Firebase;
 
 public class Feedback extends AppCompatActivity {
 
-private Firebase Ref;
+
+    /**
+     * Variables to extract the values written by users in username and feedback
+     */
+
+    private Firebase Ref;
 private EditText username,feedback;
 
 
@@ -24,6 +29,9 @@ private EditText username,feedback;
         username= (EditText) findViewById(R.id.username);
         feedback= (EditText) findViewById(R.id.Feedback);
         Firebase.setAndroidContext(this);
+
+
+        // send the user information and the message to the database
         Ref=new Firebase("https://quickmart-4da66.firebaseio.com/");
 
     }
