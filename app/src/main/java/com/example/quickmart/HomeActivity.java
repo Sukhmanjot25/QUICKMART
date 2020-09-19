@@ -83,7 +83,7 @@ public class HomeActivity extends AppCompatActivity {
      * method to call the button to go to checkout page
      */
 public void openCreateShoppingList(){
-    Intent intent=new Intent(this,CreateShoppingList.class);
+    Intent intent=new Intent(this,CheckoutActivity.class);
     startActivity(intent);
 }
 
